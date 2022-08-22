@@ -1,0 +1,290 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    padding: 125px 54px;
+    justify-content:left;
+    background-color: #00030C;
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+body{
+    background: #00030C;
+}
+
+.box{
+    width: 50%;
+    text-align: center;
+}
+
+.box h1{
+    font-size: 28px;
+    padding: 0 80px;
+}
+
+.btn{
+    margin: 10px auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 512px;
+    height: 56px;
+    background-color: #167BF7;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.btn2{
+    background: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.box > p{
+    color: #C0C0C0;
+    font-size: 12px;
+}
+
+main{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 28px;
+    text-align: left;
+    margin: 100px 0;
+}
+
+.container p{
+    width: 100%;
+    color: #C0C0C0;
+    font-size: 16px;
+}
+
+.photo{
+    width: 40%;
+}
+
+.text{
+    width: 40%;
+    margin: 0 50px;
+}
+
+.small{
+    width: 162px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.final_container{
+    margin-top: 270px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.final_container h1{
+    margin-bottom: 50px;
+    font-size: 48px;
+}
+
+.final_box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxes{
+    width: 400px;
+    height: 200px;
+    color: #FFFFFF;
+}
+
+.boxes img{
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.first-itens{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.first-itens p{
+    display: inline-block;
+    color: #FFFFFF;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.second-itens{
+    margin: 20px auto 80px;
+    color: #C0C0C0;
+    font-size: 14px;
+    width: 85%;
+}
+
+.second-itens p:nth-child(1){
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .photo, .text, .box, .box h1, .box img, .buttons{
+        width: 100%;
+    }
+
+    .photo img{
+        margin: 0 auto;
+    }
+
+    .box{
+        background-color: rgb(0, 0, 0, 0.8);
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .box h1{
+        padding: 0;
+    }
+
+    .box img{
+        width: 400px;
+    }
+
+    .photo img{
+        display: block;
+        width: 400px;
+    }
+
+    .text{
+        text-align: center;
+    }
+
+    .final_container h1{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .text a{
+        margin: 30px auto;
+       }
+
+    .final_box{
+    flex-wrap: wrap;
+   }
+
+   .boxes{
+    margin: 30px 0;
+   } 
+
+   .first-itens{
+    margin-top: 50px;
+   }
+
+   .first-itens p{
+    display: block;
+    margin: 20px 0;
+   }
+
+   .first-itens p::before{
+    content: "*";
+   }
+}
+
+@media screen and (max-width: 480px){
+
+    .menu, .box h1{
+        padding: 0;
+    }
+
+    .menu{
+        margin-top: 50px;
+        display: block;
+        background-image: none;
+    }
+
+    .box, .box h1, .box img, .buttons, .photo, .text{
+        width: 100%;
+    }
+
+    .box img{
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+
+    .box h1{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .btn{
+        width: 200px;
+    }
+
+    .container{
+        width: 100%;
+        flex-wrap: wrap;    
+        margin-bottom: 250px;
+    }
+
+    .photo img{
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .photo{
+        margin-bottom: 40px;
+    }
+
+   .text a{
+    margin: 30px auto;
+   }
+
+   .final_box{
+    flex-wrap: wrap;
+   }
+
+   .boxes{
+    margin: 30px 0;
+   }
+   
+   .first-itens p{
+    display: block;
+    margin: 20px 0;
+   }
+
+   .first-itens p::before{
+    content: "*";
+   }
+}
+
